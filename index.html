@@ -109,13 +109,13 @@
           <!-- Start Countdown -->       
           <div>
             <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
+              <li><span class="days">00</span><p class="days_text">Días</p></li>
               <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+              <li><span class="hours">00</span><p class="hours_text">Horas</p></li>
               <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
+              <li><span class="minutes">00</span><p class="minutes_text">Minutos</p></li>
               <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+              <li><span class="seconds">00</span><p class="seconds_text">Segundos</p></li>
             </ul>
             <div class="spasi">
             </div>
@@ -126,13 +126,13 @@
               var year = now.getFullYear() + 1;
           
               var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '03/21/2020 17:00:00';
+              var harih = '11/26/2022 17:00:00';
 
               $('#hitungmundur').countdown({
                 date: harih, // TODO Date format: 07/27/2017 17:00:00
                 offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
+                day: 'Día',
+                days: 'Días'
               }, function () {
                 alert('Done!');
               });
