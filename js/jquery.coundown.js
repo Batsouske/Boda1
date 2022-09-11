@@ -7,7 +7,7 @@
 (function ($) {
 	$.fn.countdown = function (options, callback) {
 		var settings = $.extend({
-			date: 11/26/2021 12:00:00,
+			date: 11/26/2021 12:00:00.,
 			offset: null,
 			day: 'Día',
 			days: 'Días',
