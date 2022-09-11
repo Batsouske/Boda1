@@ -7,16 +7,16 @@
 (function ($) {
 	$.fn.countdown = function (options, callback) {
 		var settings = $.extend({
-			date: null,
+			date: 11/26/2021 12:00:00,
 			offset: null,
-			day: 'Hari',
-			days: 'Hari',
-			hour: 'Jam',
-			hours: 'Jam',
-			minute: 'Menit',
-			minutes: 'Menit',
-			second: 'Detik',
-			seconds: 'Detik'
+			day: 'Día',
+			days: 'Días',
+			hour: 'Hora',
+			hours: 'Horas',
+			minute: 'Minuto',
+			minutes: 'Minutos',
+			second: 'Segundo',
+			seconds: 'Segundos'
 		}, options);
 
 		// Throw error if date is not set
