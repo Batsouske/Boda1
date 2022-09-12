@@ -1,4 +1,4 @@
-ul#hitungmundur {
+ul#example {
 	list-style: none;
 	margin: 30px 0;
 	padding: 0;
@@ -6,20 +6,20 @@ ul#hitungmundur {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 }
-ul#hitungmundur li {
+ul#example li {
 	display: inline-block;
 }
-ul#hitungmundur li span {
+ul#example li span {
 	font-size: 30px;
 	font-weight: 500;
 	line-height: 30px;
 }
-ul#hitungmundur li.separator {
+ul#example li.separator {
 	font-size: 30px;
 	line-height: 25px;
 	vertical-align: top;
 }
-ul#hitungmundur li p {
+ul#example li p {
 	color: #fff;
 	font-size: 16px;
 }
