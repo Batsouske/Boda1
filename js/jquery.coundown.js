@@ -1,5 +1,5 @@
 // CountDown Clock
-// Version   : 1.0.1
+// Version   : 1.0.2
 // Developer : Ekrem KAYA
 // Website   : https://e-piksel.com
 // GitHub    : https://github.com/epiksel/countdown
@@ -17,6 +17,7 @@
 			minutes: 'Minutes',
 			second: 'Second',
 			seconds: 'Seconds',
+			hideOnComplete: false
 		}, options);
 
 		// Throw error if date is not set
@@ -52,7 +53,7 @@
 		/**
 		 * Main countdown function that calculates everything
 		 */
-		function countdown () {
+		function countdown() {
 			var target_date = new Date(settings.date), // set target date
 				current_date = currentDate(); // get fixed current date
 
@@ -64,7 +65,13 @@
 				// stop timer
 				clearInterval(interval);
 
-				if (callback && typeof callback === 'function') callback();
+				if (settings.hideOnComplete) {
+					$(container).hide();
+				}
+
+				if (callback && typeof callback === 'function') {
+					callback(container);
+				}
 
 				return;
 			}
